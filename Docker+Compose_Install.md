@@ -50,7 +50,13 @@ sudo nano /etc/docker/daemon.json
 
 Content:
 
-` {   "storage-driver": "overlay2" } `
+``` shell
+{
+"storage-driver": "overlay2"
+}
+```
+
+
 
 ``` shell
 sudo systemctl start docker
@@ -86,11 +92,13 @@ sudo systemctl stop docker && cp -au /var/lib/docker /var/lib/docker.bk && yum i
 nano /etc/docker/daemon.json
 ```
 
-` {
-
+``` shell
+{
 "storage-driver": "overlay2"
+}
+```
 
-} `
+
 
 
 
@@ -102,6 +110,8 @@ sudo dnf install docker-compose -y
 
 Notes:
 
-` 10.0.0.32/27
+``` shell
+10.0.0.32/27
+10.0.0.33 - 10.0.0.62
+```
 
-10.0.0.33 - 10.0.0.62 `
