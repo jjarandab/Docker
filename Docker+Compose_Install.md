@@ -1,8 +1,8 @@
-#Docker+Compose_Install
+# Docker+Compose_Install
 
-##UBUNTU
+## UBUNTU
 
-###[Docker Install](https://docs.docker.com/engine/install/ubuntu/)
+### [Docker Install](https://docs.docker.com/engine/install/ubuntu/)
 
 - sudo apt-get update
 - sudo apt-get install ca-certificates curl gnupg lsb-release -y
@@ -14,7 +14,7 @@
 
 
 
-####[Overlay2 driver](https://docs.docker.com/storage/storagedriver/overlayfs-driver/)
+#### [Overlay2 driver](https://docs.docker.com/storage/storagedriver/overlayfs-driver/)
 
 - sudo systemctl stop docker
 - sudo cp -au /var/lib/docker /var/lib/docker.bk
@@ -27,9 +27,9 @@
 
 
 
-##FEDORA
+## FEDORA
 
-###[Docker Install](https://docs.docker.com/engine/install/fedora/)
+### [Docker Install](https://docs.docker.com/engine/install/fedora/)
 
 `sudo dnf -y install dnf-plugins-core && sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo && sudo dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y`
 
@@ -37,7 +37,7 @@
 
 
 
-####[Overlay2 driver](https://docs.docker.com/storage/storagedriver/overlayfs-driver/)
+#### [Overlay2 driver](https://docs.docker.com/storage/storagedriver/overlayfs-driver/)
 
 - `sudo systemctl stop docker && cp -au /var/lib/docker /var/lib/docker.bk && yum install nano -y`
 - `nano /etc/docker/daemon.json`
@@ -50,10 +50,12 @@
 
 
 
-##[Compose Install](https://developer.fedoraproject.org/tools/docker/compose.html)
+## [Compose Install](https://developer.fedoraproject.org/tools/docker/compose.html)
 
 `sudo dnf install docker-compose -y`
 
 10.0.0.32/27
 
 10.0.0.33 - 10.0.0.62
+
+
