@@ -39,7 +39,7 @@
 
 #### [Overlay2 driver](https://docs.docker.com/storage/storagedriver/overlayfs-driver/)
 
-- `sudo systemctl stop docker && cp -au /var/lib/docker /var/lib/docker.bk && yum install nano -y`
+- ``` sudo systemctl stop docker && cp -au /var/lib/docker /var/lib/docker.bk && yum install nano -y
 - `nano /etc/docker/daemon.json`
 
 `{
