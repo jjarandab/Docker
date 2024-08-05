@@ -31,16 +31,25 @@
 
 ### [Docker Install](https://docs.docker.com/engine/install/fedora/)
 
-`sudo dnf -y install dnf-plugins-core && sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo && sudo dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y`
+```shell
+sudo dnf -y install dnf-plugins-core && sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo && sudo dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+```
 
-`sudo systemctl start docker && sudo systemctl enable docker.service && sudo systemctl status containerd.service`
+```shell
+sudo systemctl start docker && sudo systemctl enable docker.service && sudo systemctl status containerd.service
+```
 
 
 
 #### [Overlay2 driver](https://docs.docker.com/storage/storagedriver/overlayfs-driver/)
 
-- ``` sudo systemctl stop docker && cp -au /var/lib/docker /var/lib/docker.bk && yum install nano -y
-- `nano /etc/docker/daemon.json`
+- ```shell
+  sudo systemctl stop docker && cp -au /var/lib/docker /var/lib/docker.bk && yum install nano -y
+  ```
+- ```shell
+  nano /etc/docker/daemon.json
+  ```
+- nano /etc/docker/daemon.json`
 
 `{
 
