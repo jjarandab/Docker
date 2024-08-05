@@ -32,8 +32,6 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli [containerd.io](http://containerd.io) docker-compose-plugin -y
 ```
 
-
-
 #### [Overlay2 driver](https://docs.docker.com/storage/storagedriver/overlayfs-driver/)
 
 ``` shell
@@ -55,8 +53,6 @@ Content:
 "storage-driver": "overlay2"
 }
 ```
-
-
 
 ``` shell
 sudo systemctl start docker
@@ -80,8 +76,6 @@ sudo dnf -y install dnf-plugins-core && sudo dnf config-manager --add-repo https
 sudo systemctl start docker && sudo systemctl enable docker.service && sudo systemctl status containerd.service
 ```
 
-
-
 #### [Overlay2 driver](https://docs.docker.com/storage/storagedriver/overlayfs-driver/)
 
 ``` shell
@@ -97,8 +91,6 @@ nano /etc/docker/daemon.json
 "storage-driver": "overlay2"
 }
 ```
-
-
 
 
 
